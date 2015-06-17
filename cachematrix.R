@@ -33,7 +33,6 @@ makeCacheMatrix <- function(x = matrix()) {
 ##      else calculates the inverse, caches it, returns it
 
 cacheSolve <- function(x, ...) {
-    ## Return a matrix that is the inverse of 'x'
     minv <- x$getInv()
     if (!is.null(minv)) {
         message("searching cache")
